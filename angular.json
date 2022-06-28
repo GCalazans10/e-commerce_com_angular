@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "proway-computers": {
+    "gil_commerce": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/gil_commerce",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "proway-computers:build:production"
+              "browserTarget": "gil_commerce:build:production"
             },
             "development": {
-              "browserTarget": "proway-computers:build:development"
+              "browserTarget": "gil_commerce:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "proway-computers:build"
+            "browserTarget": "gil_commerce:build"
           }
         },
         "test": {
@@ -104,8 +100,7 @@
       }
     }
   },
-  "defaultProject": "proway-computers",
   "cli": {
-    "analytics": "d5569d24-c80f-454e-88aa-a9fcd495a33d"
+    "analytics": "760e7658-db5c-45e7-b805-539f8e95a72b"
   }
 }

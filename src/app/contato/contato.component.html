@@ -1,8 +1,8 @@
 <h2 class="contact__title">Entre em contato</h2>
 <section class="contact__container">
     <form class="contact-form" [formGroup]="formContato" (ngSubmit)="enviarFormulario()">
-        <input
-            type="text"
+        <input 
+            type="text" 
             placeholder="Informe o seu nome"
             formControlName="nome"
             [class.valid]="formContato.controls['nome'].valid"
@@ -21,8 +21,8 @@
                 Esse campo precisa ser preenchido.
             </small>
         </div>
-        <input
-            type="assunto"
+        <input 
+            type="assunto" 
             placeholder="Digite o assunto"
             formControlName="assunto"
             [class.valid]="formContato.controls['assunto'].valid"
@@ -40,10 +40,10 @@
                 Esse campo precisa ser preenchido.
             </small>
         </div>
-        <input
-            type="tel"
-            placeholder="(00) 0 0000-0000"
-            mask="(00) 0 0000-0000"
+        <input 
+            type="tel" 
+            placeholder="(00) 0 0000-0000" 
+            mask="(00) 0 0000-0000" 
             formControlName="telefone"
             [class.valid]="formContato.controls['telefone'].valid"
             [class.invalid]="formContato.controls['telefone'].invalid &&
@@ -60,9 +60,9 @@
                 Esse campo precisa ser preenchido.
             </small>
         </div>
-        <input
-            type="email"
-            placeholder="Digite o seu e-mail"
+        <input 
+            type="email" 
+            placeholder="Digite o seu e-mail" 
             formControlName="email"
             [class.valid]="formContato.controls['email'].valid"
             [class.invalid]="formContato.controls['email'].invalid &&
@@ -79,8 +79,8 @@
                 Esse campo precisa ser preenchido.
             </small>
         </div>
-        <textarea
-            maxlength="300"
+        <textarea 
+            maxlength="300" 
             placeholder="Digite a sua mensagem..."
             rows="4"
             formControlName="mensagem"
@@ -102,7 +102,7 @@
         <button [disabled]="formContato.invalid" type="submit">Enviar</button>
     </form>
     <address>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.682218776937!2d-46.18728544216021!3d-23.555351196171475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd8edc8b8a181%3A0xeda2ec8169be4c3f!2sRua%20Geraldo%20Magela%20Campos%2C%20117%20-%20Jardins%20do%20Para%C3%ADso%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008726-500!5e0!3m2!1spt-BR!2sbr!4v1656366321796!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Jardins do Paraiso, Mogi das Cruzes - SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7314.7233146326635!2d-46.18423925019301!3d-23.555451101172324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd8ede7c2502b%3A0x9cbaa71064385db5!2sR.%20Dez%2C%2038%20-%20Jardim%20Santos%20Dumont%2C%20Mogi%20das%20Cruzes%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1656437753143!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Jardins do Paraiso - Mogi das Cruzes-SP</p>
     </address>
 </section>
